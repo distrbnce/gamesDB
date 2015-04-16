@@ -8,12 +8,10 @@
   <div class="header">
   HEADER
 </div>
-  <div class="menu">
-    <a href="index.html">Home</a><br/>
-    <a href="listGenesis.php">List Games</a><br/>
-    <a href="addGames.php">Add Games</a>
-    <a href="addSega.php">Add Sega</a>
-  </div>
+<?php
+include 'lib/menu.php';
+echo gamesMenu();
+?>
   <div class="main">
 <?php
 if(isset($_POST['add']))
